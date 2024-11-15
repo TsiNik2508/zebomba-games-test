@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./index.js" defer></script>
+    <title>Игра</title>
+</head>
+
+<body>
+    <div class="game">
+        <section class="map__container">
+            <div class="game-mode"></div>
+            <div class="map__background">
+                <div class="map__game-location">
+                    <div class="player" aria-label="Игрок"></div>
+                </div>
+            </div>
+            <nav class="nav-container" aria-label="Навигация">
+                <div class="friends-block">
+                    <button class="arrow-left" aria-label="Сдвинуть влево">
+                        <img src="./images/nav/arrow-left.png" alt="Влево">
+                    </button>
+                    <div class="overflow">
+                        <div class="friends-carousel-container"></div>
+                    </div>
+                    <button class="arrow-right" aria-label="Сдвинуть вправо">
+                        <img src="./images/nav/arrow-right.png" alt="Вправо">
+                    </button>
+                </div>
+                <button class="chat" aria-label="Открыть чат">
+                    <img src="./images/nav/chat.png" alt="Чат">
+                </button>
+                <button class="to-the-university" aria-label="Перейти в университет">
+                    В универ
+                </button>
+                <button class="mail" aria-label="Открыть почту">
+                    <img src="./images/nav/mail.png" alt="Почта">
+                </button>
+                <button class="rating" aria-label="Открыть рейтинг">
+                    <img src="./images/nav/rating.png" alt="Рейтинг">
+                </button>
+            </nav>
+        </section>
+        <section class="rating-container">
+            <article class="rating-window">
+                <header class="rating-window__header">
+                    <h2>Рейтинг игроков</h2>
+                    <button class="rating-window__button-close-rating" aria-label="Закрыть рейтинг">
+                        <img src="./images/rating-window/close-button.png" alt="Закрыть">
+                    </button>
+                </header>
+                <div class="rating-window__body">
+                    <div class="rating-window__second-body">
+                        <div class="second-body-container">
+                            <header class="player-info__header">
+                                <p class="rating-place">Место</p>
+                                <p class="rating-names">Имя Фамилия</p>
+                                <p class="rating-exp">Опыт</p>
+                            </header>
+                            <div class="rating-players-container" role="list"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
